@@ -573,6 +573,11 @@ template <unsigned> struct __static_assert_check {};
 #   define _LIBCPP_EXTERN_TEMPLATE(...)
 #endif
 
+#ifdef _LIBCPP_MOCK_SAN
+#   define _LIBCPP_EXTERN_TEMPLATE(...)
+#   define _LIBCPP_EXTERN_TEMPLATE2(...)
+#endif
+
 #ifndef _LIBCPP_EXTERN_TEMPLATE
 #define _LIBCPP_EXTERN_TEMPLATE(...)
 #endif
